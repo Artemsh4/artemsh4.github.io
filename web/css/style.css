@@ -6,6 +6,28 @@ body {
     text-align: justify;
 }
 
+.circle {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-40%, -50%);
+    animation: effect 1s linear infinite;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top-color: #fff;
+}
+
+@keyframes effect {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 button {
     font-family: "Montserrat", sans-serif;
 }
