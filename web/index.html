@@ -66,7 +66,35 @@
         <p>Веб-страница содержит содержит в себе: описание разделов выбора операционной системы, выбора файловой системы, 3 средств установки и удаления программного обеспечения, 3 средств создания, редактирования и обслуживания виртуальных носителей.</p>
         <p>Для навигации по странице используется выезжающее меню, открыть которое можно по кнопке в верхнем левом углу.</p>
         <p>С каждой страницы веб-страницы можно вернуться на главную с помощью выезжающего меню или закрепленного горизонтального.</p>
-        <p>Программы, которые представлены в рамках информационной системы, представлены ниже.</p>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Форма обратной связи</button>
+
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+            <form class="modal-content" action="/action_page.php">
+                <div class="container11">
+                    <h1>Форма обратной связи</h1>
+                    <p>Напишите ваши пожелания</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="" name="email" required>
+
+                    <label for="psw"><b>Сообщение</b></label>
+                    <input type="text" placeholder="" name="psw" required>
+
+                    <label>
+               
+              </label>
+
+                    <p>Ответ придет на указанный вами e-mail </p>
+
+                    <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Отменить</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="signupbtn">Отправить</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
         <div class="grid">
             <div>
                 <a href="part33.html"><img class="img-main" src="img/logos/AshampooUninstaller.png">
